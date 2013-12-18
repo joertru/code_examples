@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Prueba de Concepto</title>
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-42338691-1']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+	<!-- Google Analytics Social Button Tracking -->
+    <script type="text/javascript" src="https://s3.amazonaws.com/ha_js/ga_social_tracking.js"></script>
+   
+   <!-- Load Twitter JS-API asynchronously -->
+	<script>
+	(function(){
+	var twitterWidgets = document.createElement('script');
+	twitterWidgets.type = 'text/javascript';
+	twitterWidgets.async = true;
+	twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+	// Setup a callback to track once the script loads.
+	twitterWidgets.onload = _ga.trackTwitter;
+	document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+	_gaq.push(['_setCustomVar', 1, 'urlfoto', 'http://www.joertru.com/SocialAnalitycs/img/img1.jpg', 1 ]);
+	})();
+	</script>
+	
+	<!--LinkedIn Share Button tracking-->
+	<script type='text/javascript'>
+	function LinkedInShare() {
+	 _gaq.push(['_trackSocial', 'LinkedIn', 'Share']);
+	 _gaq.push(['_setCustomVar', 1, 'urlfoto', 'http://www.joertru.com/SocialAnalitycs/img/img1.jpg', 1 ]);
+	}
+	</script>
+
+	<!--Pinteres Share Button tracking-->
+	<script type='text/javascript'>
+	function PinterestShare() {
+	 _gaq.push(['_trackSocial', 'Pinterest', 'Share']);
+	 _gaq.push(['_setCustomVar', 1, 'urlfoto', 'http://www.joertru.com/SocialAnalitycs/img/img1.jpg', 1 ]);
+	}
+	</script>
+
+
+	</head>
+	<body>
+
+
+	
+	<div>
+		<h3>La Foto de la prueba de text</h3>	
+		<img src="img/img1.jpg" width="480" />
+		<p>Aca va el resumen de la foto Aca va el resumen de la fotoAca va el resumen de la foto</p>
+		<div class="redes">
+
+<!-- FACEBOOK -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type=”text/javascript”>
+_ga.trackFacebook();
+_gaq.push(['_setCustomVar', 1, 'urlfoto', 'http://www.joertru.com/SocialAnalitycs/img/img1.jpg', 1 ]);	
+</script>
+<div class="fb-share-button"  data-type="box_count"></div>
+
+
+<!-- TWITTER -->
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="joertru">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<!-- Place this tag where you want the +1 button to render. -->
+<div class="g-plusone"></div>
+
+<!-- Place this tag after the last +1 button tag. -->
+<script type="text/javascript">
+  window.___gcfg = {lang: 'es'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<script src="//platform.linkedin.com/in.js" type="text/javascript">lang: es_ES</script>
+<script type="IN/Share" data-counter="right"></script>
+
+<!-- Pinteres -->
+<a href="//www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkentbrew%2F6851755809%2F&media=http%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg&description=Next%20stop%3A%20Pinterest" data-pin-do="buttonPin" data-pin-config="above">
+	<img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png" />
+	</a>
+
+
+		</div>
+	</div>
+
+
+<!--Twitter Scripts -->
+<script>!function(d,s,id){
+	var js,fjs=d.getElementsByTagName(s)[0];
+	if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='//platform.twitter.com/widgets.js';
+	fjs.parentNode.insertBefore(js,fjs);}}(document,'script','twitter-wjs');
+</script>
+
+
+<!--Google+ Scripts -->
+<script type='text/javascript'>
+(function() {
+var po = document.createElement('script'); 
+po.type = 'text/javascript';
+po.async = true;
+po.src = 'https://apis.google.com/js/plusone.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+
+<!-- LinkedIn Scripts -->
+<script src='http://platform.linkedin.com/in.js' type='text/javascript'></script>
+
+
+<!-- Pinteres -->
+<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>
+
+	</body>
+</html>

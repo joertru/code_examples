@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+<style>
+.comp100{ width:102px}
+.comp90{ width:98px padding:2px 0px 2px 4px}
+.comp60{ width:60px}
+.comppin{ padding:2px 4px 2px }
+.fb_edge_widget_with_comment{ display:block float:left padding:2px 6px 0px 4px }
+</style>
+  <script type="text/javascript">
+  
+     var nid = 101;
+     var fid = 58;
+
+     var _gaq = _gaq || [];
+     _gaq.push(['_setAccount', 'UA-42338691-1']);
+     _gaq.push(['_trackPageview']);
+	
+     (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+  </script>
+<script src="social.js"></script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+    appId      : null, // ENTER your FB App ID
+    //channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File
+    status     : true, // check login status
+    cookie     : true, // enable cookies to allow the server to access the session
+    xfbml      : true  // parse XFBML
+    })
+    _ga.trackFacebook() //Google Analytics tracking
+  }
+  // Load the SDK's source Asynchronously
+ (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</script>
+<!--Botón fb:like-->
+<fb:share-button href="" type="button_count"></fb:share-button>
+<!-- Load Twitter JS-API asynchronously -->
+<script>
+  window.twttr = (function (d,s,id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0]
+    if (d.getElementById(id)) return js=d.createElement(s) js.id=id
+    js.src="//platform.twitter.com/widgets.js" fjs.parentNode.insertBefore(js, fjs)
+    return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } })
+  }(document, "script", "twitter-wjs"))
+  // Wait for the asynchronous resources to load
+  twttr.ready(function(twttr) {
+    _ga.trackTwitter() //Google Analytics tracking
+  })
+</script>
+<!--Botón twitter-->
+<span class="compartir comp100">
+<a href="" data-url="http://www.joertru.com/SocialAnalitycs/boton.html" data-via="joertru" data-lang="es" class="twitter-share-button">Tweet</a>
+</span>
+<!-- pinterest -->
+<script>
+  (function (d, buildThese) {
+  var homeScript, newScript, n = buildThese.length, i
+  for (i = 0 i < n i = i + 1) {
+    newScript = d.createElement('SCRIPT')
+    newScript.type = 'text/javascript'
+    newScript.async = true
+    newScript.src = buildThese[i]
+    homeScript = d.getElementsByTagName('SCRIPT')[0]
+    homeScript.parentNode.insertBefore(newScript, homeScript)
+  }
+  }(document, [
+  '//assets.pinterest.com/js/pinit.js'
+  ])
+  )
+</script>
+<span class="compartir comp60 comppin" onclick="_gaq.push(['_trackSocial', 'pinterest', 'pin_it', 'LA_URL'])">
+  <a data-pin-config="beside" href="//pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" ><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>
+</span>
+<!-- google -->
+<span class="compartir comp60">
+  <div class="g-plusone" data-size="medium" ></div>
+</span>
+<script>
+  window.___gcfg = {lang:"es"}
+  (function() {
+  var po = document.createElement("script") po.type = "text/javascript" po.async = true
+  po.src = "https://apis.google.com/js/plusone.js"
+  var s = document.getElementsByTagName("script")[0] s.parentNode.insertBefore(po, s)
+  })()
+</script>
+<!-- linkedin -->                
+<span class="compartir comp90">
+<script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
+<script type="IN/Share" data-counter="top" data-onsuccess="trackLinkedIn"></script>
+</span>
+<script>
+function trackLinkedIn(targetURL)
+{
+    _gaq.push(['_trackSocial', 'LinkedIn', 'share', targetURL])
+}
+</script>
+</body>
+<html>
